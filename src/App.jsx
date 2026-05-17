@@ -4,10 +4,11 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import './style.css'
 let commerce = ()=>{
   return (
     <>
-     <Navbar expand="lg" className="bg-body-tertiary" style={{backgroundColor:"#111827"}}>
+     <Navbar expand="lg" className="bg-body-tertiary o" >
       <Container fluid>
         <Navbar.Brand href="#"><h5 style={{fontFamily:"sans-serif", textTransform:"uppercase", fontSize:"600"}}>cartify</h5></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
