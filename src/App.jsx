@@ -9,7 +9,7 @@ let App = ()=>{
   return (
     <>
      <Navbar expand="lg" className="bg-body-tertiary " id='new-bg' >
-      <Container fluid>
+      <Container fluid id='main-nav'>
         <Navbar.Brand href="#"><h5 id='logo'>cartify</h5></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
