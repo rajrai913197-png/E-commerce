@@ -1,12 +1,10 @@
-#new-bg{
-    background-color: #111827 !important;
-   
-}
+
 #logo{
-    color: white;
+    color:  #1a1c1e;
     font-family: 'poppins',sans-serif;
     padding: 0%;
     margin: 0%;
+   text-transform: uppercase;
 }
 #main-nav{
     display: flex !important;
@@ -14,4 +12,7 @@
     padding: 0px 30px 0px 30px;
     align-items: center !important;
     color: white !important;
+}
+#new-bg{
+    background-color: rgb(176, 213, 214) !important;
 }
