@@ -16,7 +16,7 @@ let App = ()=>{
           <div id='search-nav'>
            <a href="">Search</a>
            <a href="">Cart icon</a>
-           <button>Login</button>
+           <button id='btn'>Login</button>
           </div>
         </Container>
        
