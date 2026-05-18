@@ -9,6 +9,8 @@
 #search-nav{
     display: flex;
     gap: 15px;
+    justify-content: center;
+    align-items: center;
 }
 #btn{
     width: 50px;
