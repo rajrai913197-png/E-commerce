@@ -1,6 +1,7 @@
 #main-nav{
     display: flex !important;
     justify-content: space-evenly;
+    font-family: "poppins" sans-serif;
 }
 #links{
     display: flex;
@@ -13,10 +14,11 @@
     align-items: center;
 }
 #btn{
-    width: 50px;
+    width: 100px;
     height: 40px;
     border: none;
     background-color: #2563eb;
     color: #ffffff;
    border-radius: 10px;
+   margin-left: 10px;
 }
