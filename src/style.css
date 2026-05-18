@@ -8,7 +8,7 @@
 }
 #main-nav{
     display: flex !important;
-    justify-content: space-between !important;
+    justify-content: space-evenly !important;
     padding: 0px 30px 0px 30px;
     align-items: center !important;
     color: white !important;
