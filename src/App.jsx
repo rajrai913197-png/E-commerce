@@ -13,7 +13,7 @@ let App = ()=>{
            <a href="">Shop</a>
            <a href="">About</a>
           </div>
-          <div>
+          <div id='search-nav'>
            <a href="">Search</a>
            <a href="">Cart icon</a>
            <button>Login</button>

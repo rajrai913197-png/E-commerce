@@ -3,5 +3,10 @@
     justify-content: space-evenly;
 }
 #links{
-    
+    display: flex;
+    gap: 15px;
+}
+#search-nav{
+    display: flex;
+    gap: 15px;
 }
