@@ -1,24 +1,50 @@
 #main-nav{
     display: flex !important;
-    justify-content: space-evenly;
-    font-family: "poppins" sans-serif;
+    justify-content: space-between;
+    padding: 0px 40px 0px 40px;
 }
 #links{
     display: flex;
-    gap: 15px;
+    gap: 40px;
+   
 }
 #search-nav{
     display: flex;
-    gap: 15px;
+    gap: 40px;
     justify-content: center;
     align-items: center;
 }
 #btn{
-    width: 100px;
-    height: 40px;
+    width: 70px;
+    height: 30px;
     border: none;
-    background-color: #2563eb;
-    color: #ffffff;
-   border-radius: 10px;
+    background-color: rgba(0, 128, 0, 0.76);
+   color: #ffffff;
+   
+   border-radius: 5px;
    margin-left: 10px;
+   font-size: small;
+   border: 1px solid green;
+}
+#btn:hover{
+    background-color: green;
+}
+#links a{
+   text-decoration: none;
+   font-family: 'poppins' sans-serif;
+   font-size: small;
+   text-transform: uppercase;
+   color: black;
+}
+#search-nav a{
+     text-decoration: none;
+   font-family: 'poppins' sans-serif;
+   font-size: small;
+   text-transform: uppercase;
+   color: black;
+}
+#logo{
+    font-size: large;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-weight: 800;
 }
