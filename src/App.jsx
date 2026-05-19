@@ -1,5 +1,5 @@
 import Navbaar from "./component/nav"
-import Poster from "./poster"
+import Poster from "./component/poster"
 
 let App =()=>{
   return(
