@@ -15,7 +15,7 @@ let Poster =()=>{
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img src={f2} alt="" />
+        <img src={f2} alt="" style={{height:"400px", width:"100%"}} />
         <Carousel.Caption>
           <h3>Second slide label</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
