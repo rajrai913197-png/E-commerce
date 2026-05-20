@@ -8,7 +8,6 @@ let Poster =()=>{
         <>
    <Carousel>
       <Carousel.Item>
-        <img src={f1} style={{height:"450px", width:"100%"}}  />
         <Carousel.Caption>
           <h3>First slide label</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
