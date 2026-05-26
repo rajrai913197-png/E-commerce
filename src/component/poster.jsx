@@ -7,7 +7,7 @@ let Poster =()=>{
   return(
   <>
    <Carousel fade>
-      <Carousel.Item id='main-nav'>
+      <Carousel.Item >
         <img src={img1} alt="" style={{height:"500px",width:"100%"}} />
         <Carousel.Caption>
           <h3>First slide label</h3>

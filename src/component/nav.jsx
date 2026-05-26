@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col';
 let Navbaar =()=>{
     return(
         <>
-         <Navbar className="bg-body-tertiary justify-content-between">
+         <Navbar className="bg-body-tertiary justify-content-between" id='main-nav'>
       <Form inline>
         <InputGroup>
           <InputGroup.Text id="basic-addon1">@</InputGroup.Text>

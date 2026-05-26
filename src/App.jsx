@@ -1,4 +1,4 @@
-import Footer from "./component/footer"
+
 import Navbaar from "./component/nav"
 import Poster from "./component/poster"
 
@@ -7,7 +7,7 @@ let App =()=>{
     <>
     <Navbaar />
     <Poster />
-    <Footer />
+
     </>
 
   )
