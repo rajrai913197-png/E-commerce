@@ -1,0 +1,49 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+#navBar{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+   
+}
+#logo{
+    height: 40px;
+    width: 80px;
+}
+#links{
+    display: flex;
+    gap: 100px;
+}
+#links .navLink{
+    color: white;
+    text-decoration: none;
+}
+#subBtn{
+    height: 40px;
+    width: 150px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-direction: row;
+   border-radius: 2px;
+   background-color: rgba(0, 0, 0, 0.077);
+   border: 1px solid white;
+   color: white;
+}
+#cartsLink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#cartsLink .linksLogo i{
+    color: white;
+}
