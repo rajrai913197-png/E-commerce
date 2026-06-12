@@ -1,8 +1,23 @@
+import { useState } from "react";
 import img1 from "./new/puma.jpg"
-import { Link,Outlet } from "react-router-dom";
+import { Link,useNavigate,Outlet } from "react-router-dom";
+import Sign from "../login/sign/signup";
+
 const Layout = ()=>{
+    const[showLogin,setShowLoging]=useState(false)
+     const navigate = useNavigate()
+     const clickEvent =()=>{
+        const user = localStorage.getItem("user")
+        if (user) {
+            navigate("/wish")
+           
+        } else{
+            setShowLoging(true)
+        }
+        }
     return(
         <>
+       {showLogin && <Sign /> }
        <div id="navBar">
        <img src={img1}alt="logo" id="logo" />
         <div id="links">
@@ -14,7 +29,7 @@ const Layout = ()=>{
         </div>
         <div id="cartsLink">
         <button id="subBtn"><i class="fa-solid fa-magnifying-glass"></i>SEARCH</button>
-       <Link to="wish" className="linksLogo"><i class="fa-regular fa-heart"></i></Link>
+       <Link to="wish" className="linksLogo" ><i class="fa-regular fa-heart" onClick={clickEvent}></i></Link>
        <Link to="cart" className="linksLogo"><i class="fa-solid fa-cart-arrow-down"></i></Link>
        <Link to="admin" className="linksLogo"><i class="fa-solid fa-user"></i></Link>
         </div>

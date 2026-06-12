@@ -1,7 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 import poster1 from "./new/pumap1.jpg"
 import poster2 from "./new/pumap3.jpg"
-import poster3 from "./new/pumap2.jpg"
 
 const Home =()=>{
     return(
