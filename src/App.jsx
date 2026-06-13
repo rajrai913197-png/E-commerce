@@ -8,6 +8,7 @@ import Sports from "./navbar/sports"
 import Wish from "./navbar/wish"
 import Cart from "./navbar/cart"
 import Admin from "./navbar/admin"
+import Login from "./login/sign/login"
 const App =()=>{
   return(
     <>
@@ -22,9 +23,12 @@ const App =()=>{
        <Route   path="wish" element={<Wish />} />
        <Route   path="cart" element={<Cart />} />
        <Route   path="admin" element={<Admin />} />
+       <Route   path="login" element={<Login />} />
       </Route>
+
     </Routes>
     </BrowserRouter>
+     
     </>   
   )
 }

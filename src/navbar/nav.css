@@ -48,9 +48,9 @@
     color: white;
 }
 #login-main{
-    height: 350px;
-    width: 400px;
-    background-color: #111111d3;
+    height: 450px;
+    width: 350px;
+    background-color: #111111c6;
     color: #ffffff;
     display: flex;
     justify-content: center;
@@ -60,6 +60,7 @@
     position: absolute;
     left: 1000px;
     top: 90px;
+    z-index: 10;
 }
 #login-head{
    display: flex;
@@ -82,4 +83,50 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+#label1{
+    margin-right: 145px;
+   font-size: 12px;
+   font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+}
+#label2{
+    margin-right: 170px;
+   font-size: 12px;
+   font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+}
+#label3{
+    margin-right: 145px;
+   font-size: 12px;
+   font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+}
+#label4{
+    margin-right: 105px;
+   font-size: 12px;
+   font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+}
+#login-main input{
+    height: 30px;
+    width: 200px;
+    border: none;
+    border-radius: 2px;
+}
+#login-main input::placeholder{
+  padding-left: 10px;
+  font-size: small;
+   font-family: Arial, Helvetica, sans-serif;
+}
+#signbtn{
+    height: 35px;
+    width: 90px;
+    border-radius: 5px;
+   border: none;
+   font-size: small;
+   font-family: Arial, Helvetica, sans-serif;
+   color: #ffffff;
+   background-color: #000;
 }
