@@ -9,12 +9,15 @@ import Wish from "./navbar/wish"
 import Cart from "./navbar/cart"
 import Admin from "./navbar/admin"
 import Login from "./login/sign/login"
+import { ToastContainer } from "react-bootstrap"
+import Products from "./navbar/products"
+
 const App =()=>{
   return(
     <>
     <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Layout />}>
+      <Routes>
+       <Route path="/" element={<Layout />}>
       <Route  index element={<Home />} />
       <Route  path="men" element={<Men />} />
       <Route  path="women" element={<Women />} />
@@ -24,11 +27,11 @@ const App =()=>{
        <Route   path="cart" element={<Cart />} />
        <Route   path="admin" element={<Admin />} />
        <Route   path="login" element={<Login />} />
+       <Route   path="products" element={<Products />} />
       </Route>
-
     </Routes>
+    <ToastContainer />
     </BrowserRouter>
-     
     </>   
   )
 }

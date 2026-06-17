@@ -48,8 +48,8 @@
     color: white;
 }
 #login-main{
-    height: 450px;
-    width: 350px;
+    height: 500px;
+    width: 400px;
     background-color: #111111c6;
     color: #ffffff;
     display: flex;
@@ -86,28 +86,29 @@
     flex-direction: column;
 }
 #label1{
-    margin-right: 145px;
+    margin-right: 180px;
    font-size: 12px;
    font-family: Arial, Helvetica, sans-serif;
-  text-transform: capitalize;
+   text-transform: uppercase;
+   color: #ffffff;
 }
 #label2{
-    margin-right: 170px;
+    margin-right: 215px;
    font-size: 12px;
    font-family: Arial, Helvetica, sans-serif;
-  text-transform: capitalize;
+   text-transform: uppercase;
 }
 #label3{
-    margin-right: 145px;
+    margin-right: 180px;
    font-size: 12px;
    font-family: Arial, Helvetica, sans-serif;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 #label4{
-    margin-right: 105px;
+    margin-right: 115px;
    font-size: 12px;
    font-family: Arial, Helvetica, sans-serif;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 #login-main input{
     height: 30px;
@@ -122,11 +123,121 @@
 }
 #signbtn{
     height: 35px;
-    width: 90px;
+    width: 100px;
     border-radius: 5px;
    border: none;
-   font-size: small;
+   font-size: medium;
    font-family: Arial, Helvetica, sans-serif;
    color: #ffffff;
    background-color: #000;
+}
+#poster-div{
+    background-image: url("./new/3.jpg");
+    height: 500px;
+    width: 100%;
+   display: flex;
+   justify-content: start;
+   align-items: start;
+  flex-direction: column;
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+#poster-div2{
+    background-image: url("./new/myshoe2.jpg");
+    height: 800px;
+    width: 100%;
+   display: flex;
+   justify-content: start;
+   align-items: start;
+  flex-direction: column;
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+#latest{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#latest p{
+    text-transform: uppercase;
+}
+#jur-div{
+   height: 500px;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+}
+#jur-div #jur1{
+    background-image: url("./new/jurseyposter1.avif");
+    height: 600px;
+    width: 500px;
+    background-size: cover;
+   background-repeat: no-repeat;
+    display: flex;
+  justify-content: center;
+  align-items: end;
+  color: #ffffff;
+}
+#jur-div #jur2{
+    background-image: url("./new/pumaposter2.webp");
+    height: 600px;
+    width: 500px;
+    background-size: cover;
+   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  color: #ffffff;
+}
+#carts{
+    display: flex;
+    justify-content: center;
+   gap: 10px;
+}
+.cart-btn{
+    height: 40px !important; 
+    background-color: #000 !important;
+    border: none !important;
+    border-radius: 0% !important;
+}
+.signInp{
+   background-color: rgba(5, 5, 5, 0.602);
+   height: 40px !important;
+   width: 250px !important;
+   color: #ffffff;
+}
+#Login-Page{
+     height: 400px;
+    width: 350px;
+    background-color: #000000c7;
+    position: absolute;
+    top: 90px;
+    z-index: 10;
+    left: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+}
+#Login-Page h4{
+    text-align: center;
+    color: #ffffff;
+}
+#Login-Page input{
+    height: 40px;
+    width: 220px;
+    margin-left: 70px;
+}
+#Login-Page label{
+     margin-left: 70px;
+     color: #ffffff;
+}
+#Login-Page button{
+     height: 40px;
+    width: 120px;
+    margin-left: 120px;
+   border: none;
 }
