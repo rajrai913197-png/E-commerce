@@ -30,7 +30,7 @@ if(user && user.email === email && user.password === password){
             <input type="email"  name="email" onChange={(e)=>setEmail(e.target.value)}/> <br /><br />
              <label htmlFor="confirm" style={{textTransform:"uppercase" ,fontSize:"small"}}>Confirm - Password</label>
             <input type="password" name="confirm" onChange={(e)=>setPassword(e.target.value)}/> <br /> <br />
-            <button >SUBMIT</button>
+            <button >SUBMIT HERE</button>
         </form>
         </>
     )
