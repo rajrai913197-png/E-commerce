@@ -3,7 +3,9 @@ import img1 from "./new/puma.jpg"
 import { Link,useNavigate,Outlet } from "react-router-dom";
 import Sign from "../login/sign/signup";
 import Login from "../login/sign/login";
+import User from "./user";
 const Layout = ()=>{
+  const[showUser,showSetUser]=useState(false)
    const [showSignup, setShowSignup] = useState(false);
    const [showLogin, setShowLogin] = useState(false);
      const navigate = useNavigate()
@@ -18,6 +20,14 @@ const Layout = ()=>{
             },200)
         }
         }
+        const myUser = ()=>{
+           const user = localStorage.getItem("user")
+          if (user) {
+            showSetUser(true)
+          }else{
+            setShowSignup(true)
+          }
+        }
 
     return(
         <>
@@ -26,7 +36,7 @@ const Layout = ()=>{
             <Sign  setShowSignup={setShowSignup}   setShowLogin={setShowLogin}/> 
             }
              { showLogin && <Login  setShowLogin={setShowLogin} />}
-
+          { showUser && <User  showSetUser={showSetUser}/>}
        <div id="navBar">
        <img src={img1}alt="logo" id="logo" />
         <div id="links">
@@ -40,7 +50,8 @@ const Layout = ()=>{
         <button id="subBtn"><i class="fa-solid fa-magnifying-glass"></i>SEARCH</button>
        <Link to="wish" className="linksLogo" onClick={(e)=>{e.preventDefault(); clickEvent()}}><i class="fa-regular fa-heart"></i></Link>
        <Link to="cart" className="linksLogo"><i class="fa-solid fa-cart-arrow-down"></i></Link>
-       <Link to="admin" className="linksLogo"><i class="fa-solid fa-user"></i></Link>
+       <Link to="admin" className="linksLogo" onClick={(e)=> {e.preventDefault(); myUser()}}><i class="fa-solid fa-user"></i></Link>
+       
         </div>
         </div>
       

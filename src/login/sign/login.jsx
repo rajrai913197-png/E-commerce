@@ -27,10 +27,10 @@ if(user && user.email === email && user.password === password){
         <form  id="Login-Page" onSubmit={eventSubmit}>
             <h4   style={{ fontSize:"medium"}}>LOGIN-PAGE</h4>
              <label htmlFor="email"  style={{textTransform:"uppercase", fontSize:"small"}} >Confirm-Email</label>
-            <input type="email"  name="email" onChange={(e)=>setEmail(e.target.value)}/> <br /><br />
+            <input type="email"  name="email" className="inputByte"  placeholder="Inter Your Gmail" onChange={(e)=>setEmail(e.target.value)}/> <br /><br />
              <label htmlFor="confirm" style={{textTransform:"uppercase" ,fontSize:"small"}}>Confirm - Password</label>
-            <input type="password" name="confirm" onChange={(e)=>setPassword(e.target.value)}/> <br /> <br />
-            <button >SUBMIT HERE</button>
+            <input type="password" name="confirm" className="inputByte" placeholder="Inter Your Password" onChange={(e)=>setPassword(e.target.value)}/> <br /> <br />
+            <button >SUBMIT</button>
         </form>
         </>
     )

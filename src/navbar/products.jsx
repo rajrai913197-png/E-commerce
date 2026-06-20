@@ -2,8 +2,10 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { contextCart } from "./context";
 import { useContext } from "react";
+import { wishContext } from "./contextWish";
 const Products =()=>{
-    const{addToCart}=useContext(contextCart)
+     const { addToCart } = useContext(contextCart);
+  const { addToWish } = useContext(wishContext);
     const[product,setproduct]=useState([])
     useEffect(()=>{
      axios.get("http://localhost:3000/products")
@@ -35,7 +37,10 @@ const Products =()=>{
               <h1 style={{fontSize:"15px", textTransform:"uppercase", marginRight:"60px"}}>name -{e.name}</h1>
                <h4 style={{fontSize:"15px" ,paddingLeft:"10px"}}> PRICE -&#8377;{e.price}</h4>
                 <h4 style={{fontSize:"15px" ,paddingLeft:"10px"}}> SIZE -{e.size}</h4>
-                <button style={{height:"40px",width:"120px",marginLeft:"9px",backgroundColor:"black", border:"none" , color:"#ffff" ,fontSize:"small"}} onClick={()=>addToCart((e))}>ADD-TO-CART</button>
+                <div>
+                    <button style={{height:"40px",width:"120px",marginLeft:"9px",backgroundColor:"black", border:"none" , color:"#ffff" ,fontSize:"small"}} onClick={()=>addToCart((e))}><i class="fa-solid fa-cart-arrow-down"></i></button>
+                <button style={{height:"40px",width:"120px",marginLeft:"9px",backgroundColor:"black", border:"none" , color:"#ffff" ,fontSize:"small"}} onClick={()=>addToWish((e))}><i class="fa-solid fa-heart"></i></button> 
+                </div>
                 </div>
                </div>
             </>

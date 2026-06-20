@@ -241,3 +241,14 @@
     margin-left: 120px;
    border: none;
 }
+.inputByte{
+    background-color: #0000009b;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: small;
+    padding-left: 10px;
+}
+.userBtn:hover{
+  background-color: #e69a1f;
+}

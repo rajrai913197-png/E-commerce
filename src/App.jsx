@@ -11,6 +11,7 @@ import Admin from "./navbar/admin"
 import Login from "./login/sign/login"
 import { ToastContainer } from "react-bootstrap"
 import Products from "./navbar/products"
+import Sign from "./login/sign/signup"
 
 const App =()=>{
   return(
@@ -28,6 +29,7 @@ const App =()=>{
        <Route   path="admin" element={<Admin />} />
        <Route   path="login" element={<Login />} />
        <Route   path="products" element={<Products />} />
+       <Route   path="sign" element={<Sign />} />
       </Route>
     </Routes>
     <ToastContainer />
